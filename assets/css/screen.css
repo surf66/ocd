@@ -206,7 +206,7 @@ h4, h5, h6 {
     -webkit-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
     -moz-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
     -o-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
-    color: #2E2E2E;
+    color: #1ab0bc;
     line-height: 1.15em;
     margin: 0 0 0.4em 0;
     font-family: "Lato", sans-serif;
@@ -247,7 +247,7 @@ a {
 }
 
 a:hover {
-    color: #111;
+    color: #1ab0bc;
 }
 
 p, ul, ol, dl {
@@ -894,6 +894,7 @@ body:not(.post-template) .post-title {
 
 .post-title a {
     text-decoration: none;
+    color: #1ab0bc;
 }
 
 .post-excerpt p {
@@ -1314,7 +1315,7 @@ body:not(.post-template) .post-title {
     overflow: hidden;
 }
 .read-next-story:hover:before {
-    background: rgba(0,0,0,0.8);
+    background: rgba(26, 176, 188, 0.8);
     transition: all 0.2s ease;
 }
 .read-next-story:hover .post:before {
@@ -1331,29 +1332,13 @@ body:not(.post-template) .post-title {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0,0,0,0.7);
+    background: rgba(26, 176, 188, 0.7);
     transition: all 0.5s ease;
 }
 
 .read-next-story .post {
     padding-top: 6rem;
     padding-bottom: 6rem;
-}
-
-.read-next-story .post:before {
-    content: "Read This Next";
-    padding: 4px 10px 5px;
-    text-transform: uppercase;
-    font-size: 1.1rem;
-    font-family: "Lato", sans-serif;
-    font-weight: 300;
-    color: rgba(255,255,255,0.8);
-    border: rgba(255,255,255,0.5) 1px solid;
-    border-radius: 4px;
-    transition: all 0.5s ease;
-}
-.read-next-story.prev .post:before {
-    content: "You Might Enjoy";
 }
 
 .read-next-story h2 {
@@ -1368,7 +1353,7 @@ body:not(.post-template) .post-title {
 
 /* Special styles for posts with no cover images */
 .read-next-story.no-cover {
-    background: #f5f8fa;
+    background: #1ab0bc;
 }
 
 .read-next-story.no-cover:before {
@@ -1381,11 +1366,11 @@ body:not(.post-template) .post-title {
 }
 
 .read-next-story.no-cover h2 {
-    color: rgba(0,0,0,0.8);
+    color: #fff;
 }
 
 .read-next-story.no-cover p {
-    color: rgba(0,0,0,0.5);
+    color: #fff;
 }
 
 /* if there are two posts without covers, put a border between them */
@@ -1551,9 +1536,6 @@ body:not(.post-template) .post-title {
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
-        height: auto;
-        min-height: 240px;
-        height: 60vh;
         padding: 15% 0;
     }
 
@@ -1683,7 +1665,6 @@ body:not(.post-template) .post-title {
 
     .main-header {
         margin-bottom: 15px;
-        height: 40vh;
     }
 
     .archive-template .main-header {
