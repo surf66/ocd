@@ -161,9 +161,6 @@ table { border-collapse: collapse; border-spacing: 0; }
 .icon-link:before {
     content: "\f608";
 }
-.icon-menu:before {
-    content: "\f609";
-}
 /*
     IMPORTANT: When making any changes to the icon font, be sure to increment
     the version number by 1 in the @font-face rule. `?v=1` becomes `?v=2`
@@ -546,7 +543,7 @@ body.nav-opened .nav-cover {
     z-index: 5;
     width: 240px;
     opacity: 0;
-    background: #111;
+    background: #1DA0AB;
     margin-bottom: 0;
     text-align: left;
     overflow-y: auto;
@@ -578,7 +575,6 @@ body.nav-opened .nav {
     top: 45px;
     left: 30px;
     font-size: 16px;
-    font-weight: 100;
     text-transform: uppercase;
     color: #fff;
 }
@@ -604,7 +600,7 @@ body.nav-opened .nav {
     top: 0;
     width: 20px;
     height: 1px;
-    background: rgb(150,150,150);
+    background: #fff;
     top: 15px;
     -webkit-transition: background 0.15s ease;
             transition: background 0.15s ease;
@@ -676,7 +672,7 @@ body.nav-opened .nav {
 
 .nav a:link,
 .nav a:visited {
-    color: #B8B8B8;
+    color: #fff;
 }
 
 .nav li.nav-current a,
@@ -789,58 +785,25 @@ body.nav-opened .nav {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     display: inline-block;
+    color: #fff;
     float: right;
     height: 38px;
     padding: 0 15px;
-    border-style: solid;
-    border-width: 1px;
     opacity: 1;
     text-align: center;
-    font-size: 12px;
+    font-size: 24px;
     text-transform: uppercase;
     line-height: 35px;
     white-space: nowrap;
-    border-radius: 3px;
     transition: all 0.5s ease;
 }
-.menu-button:before {
-    font-size: 12px;
-    font-weight: bold;
-    margin-right: 6px;
-    position: relative;
-    top: 1px;
-}
 .menu-button:hover {
-    background: #fff;
-}
-.menu-button:focus {
-    outline: 0;
-}
-
-/* When the navigation is closed */
-.nav-closed .menu-button {
     color: #fff;
-    border-color: rgba(255, 255, 255, 0.6);
-}
-.nav-closed .menu-button:hover {
-    color: #222;
-}
-
-/* When the navigation is closed and there is no cover image */
-.nav-closed .no-cover .menu-button {
-    border-color: #BFC8CD;
-    color: #9EABB3;
-}
-.nav-closed .no-cover .menu-button:hover {
-    border-color: #555;
-    color: #555;
 }
 
 /* When the navigation is opened */
 .nav-opened .menu-button {
     padding: 0 12px;
-    background: #111;
-    border-color: #111;
     color: #fff;
     -webkit-transform: translate3D(94px, 0, 0);
         -ms-transform: translate3D(94px, 0, 0);
@@ -1746,11 +1709,11 @@ body:not(.post-template) .post-title {
         padding: 0 5px;
         border-radius: 0;
         border-width: 0;
-        color: #2e2e2e;
+        color: #fff;
         background: transparent;
     }
     .menu-button:hover {
-        color: #2e2e2e;
+        color: #fff;
         border-color: transparent;
         background: none;
     }
