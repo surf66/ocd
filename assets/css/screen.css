@@ -118,7 +118,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 /* Apply these base styles to all icons */
 [class^="icon-"]:before, [class*=" icon-"]:before {
-    font-family: "casper-icons", "Open Sans", sans-serif;
+    font-family: "casper-icons", "Roboto Slab", sans-serif;
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -185,7 +185,7 @@ html {
 body {
     height: 100%;
     max-height: 100%;
-    font-family: "Merriweather", serif;
+    font-family: 'Roboto Slab', serif;
     letter-spacing: 0.01rem;
     font-size: 1.8rem;
     line-height: 1.75em;
@@ -212,7 +212,8 @@ h4, h5, h6 {
     color: #2E2E2E;
     line-height: 1.15em;
     margin: 0 0 0.4em 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
     text-rendering: geometricPrecision;
 }
 
@@ -504,11 +505,11 @@ body.nav-opened .site-wrapper {
     display: table;
     width: 100%;
     height: 100vh;
-    margin-bottom: 5rem;
     text-align: center;
-    background: #222 no-repeat center center;
+    background: #1ab0bc no-repeat center center;
     background-size: cover;
     overflow: hidden;
+    margin-bottom: 20px;
 }
 
 .main-header .inner {
@@ -523,7 +524,8 @@ body.nav-opened .site-wrapper {
 
 .main-nav a {
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
 }
 
 /* Navigation */
@@ -698,7 +700,8 @@ body.nav-opened .nav {
     color: #111 !important; /* Overides `.nav a:link, .nav a:visited` colour */
     text-align: center;
     font-size: 12px;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
     text-transform: uppercase;
     text-decoration: none;
     line-height: 35px;
@@ -870,7 +873,8 @@ body.nav-opened .nav {
     font-size: 5rem;
     letter-spacing: -1px;
     font-weight: 700;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
     color: #fff;
 }
 
@@ -879,35 +883,33 @@ body.nav-opened .nav {
     font-size: 2rem;
     line-height: 1.5em;
     font-weight: 400;
-    font-family: "Merriweather", serif;
+    font-family: "Roboto Slab", serif;
     letter-spacing: 0.01rem;
     color: rgba(255,255,255,0.8);
 }
 
-.no-cover.main-header {
-    min-height: 160px;
-    max-height: 40vh;
-    background: #f5f8fa;
-}
 
-.no-cover .page-title {
-    color: rgba(0,0,0,0.8);
-}
-
-.no-cover .page-description {
-    color: rgba(0,0,0,0.5);
-}
 
 /* Add subtle load-in animation for content on the home page */
 .home-template .page-title {
-    -webkit-animation: fade-in-down 0.6s;
-    animation: fade-in-down 0.6s;
+    -webkit-animation: fade-in-down 1s;
+    animation: fade-in-down 1s;
     -webkit-animation-delay: 0.2s;
     animation-delay: 0.2s;
 }
 .home-template .page-description {
-    -webkit-animation: fade-in-down 0.9s;
-    animation: fade-in-down 0.9s;
+    margin: 0 0 50px;
+    -webkit-animation: fade-in-down 1.3s;
+    animation: fade-in-down 1.3s;
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+}
+
+.fa.fa-arrow-circle-o-down {
+    color: #fff;
+    font-size: 1.5em;
+    -webkit-animation: fade-in-down 1.8s;
+    animation: fade-in-down 1.8s;
     -webkit-animation-delay: 0.1s;
     animation-delay: 0.1s;
 }
@@ -919,25 +921,8 @@ body.nav-opened .nav {
     max-width: 710px;
     margin: 4rem auto;
     padding-bottom: 4rem;
-    border-bottom: #EBF2F6 1px solid;
+    border-bottom: #F2F2F2 1px solid;
     word-wrap: break-word;
-}
-
-/* Add a little circle in the middle of the border-bottom on our .post
-   just for the lolz and stylepoints. */
-.post:after {
-    display: block;
-    content: "";
-    width: 7px;
-    height: 7px;
-    border: #E7EEF2 1px solid;
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    margin-left: -5px;
-    background: #FFF;
-    border-radius: 100%;
-    box-shadow: #FFF 0 0 0 5px;
 }
 
 body:not(.post-template) .post-title {
@@ -961,7 +946,8 @@ body:not(.post-template) .post-title {
 .post-meta {
     display: block;
     margin: 1.75rem 0 0 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
     font-size: 1.5rem;
     line-height: 2.2rem;
     color: #9EABB3;
@@ -1121,7 +1107,7 @@ body:not(.post-template) .post-title {
     position: relative;
     margin: 6rem 0 0 0;
     padding: 6rem 0 0 0;
-    border-top: #EBF2F6 1px solid;
+    border-top: #F2F2F2 1px solid;
 }
 
 .post-footer h4 {
@@ -1231,7 +1217,7 @@ body:not(.post-template) .post-title {
 
 .author-profile {
     padding: 0 15px 5rem 15px;
-    border-bottom: #EBF2F6 1px solid;
+    border-bottom: #F2F2F2 1px solid;
     text-align: center;
 }
 
@@ -1310,7 +1296,7 @@ body:not(.post-template) .post-title {
 /* Location, website, and link */
 .author-profile .author-meta {
     margin: 2rem 0;
-    font-family: "Merriweather", serif;
+    font-family: "Roboto Slab", serif;
     letter-spacing: 0.01rem;
     font-size: 1.7rem;
 }
@@ -1396,7 +1382,8 @@ body:not(.post-template) .post-title {
     padding: 4px 10px 5px;
     text-transform: uppercase;
     font-size: 1.1rem;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
     color: rgba(255,255,255,0.8);
     border: rgba(255,255,255,0.5) 1px solid;
     border-radius: 4px;
@@ -1484,7 +1471,8 @@ body:not(.post-template) .post-title {
     width: 80%;
     max-width: 710px;
     margin: 4rem auto;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
     font-size: 1.3rem;
     color: #9EABB3;
     text-align: center;
@@ -1529,7 +1517,7 @@ body:not(.post-template) .post-title {
 
 .extra-pagination {
     display: none;
-    border-bottom: #EBF2F6 1px solid;
+    border-bottom: #F2F2F2 1px solid;
 }
 .extra-pagination:after {
     display: block;
@@ -1568,7 +1556,8 @@ body:not(.post-template) .post-title {
     position: relative;
     margin: 8rem 0 0 0;
     padding: 1rem 15px;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
     font-size: 1rem;
     line-height: 1.75em;
     color: #BBC7CC;
@@ -1582,19 +1571,6 @@ body:not(.post-template) .post-title {
 
 .site-footer a:hover {
     border-bottom: #bbc7cc 1px solid;
-}
-
-.poweredby {
-    display: block;
-    width: 45%;
-    float: right;
-    text-align: right;
-}
-
-.copyright {
-    display: block;
-    width: 45%;
-    float: left;
 }
 
 
@@ -1745,10 +1721,6 @@ body:not(.post-template) .post-title {
     .main-header {
         margin-bottom: 15px;
         height: 40vh;
-    }
-
-    .no-cover.main-header {
-        height: 30vh;
     }
 
     .archive-template .main-header {
@@ -1926,7 +1898,7 @@ body:not(.post-template) .post-title {
     .post-footer .author {
         margin: 0 0 2rem 0;
         padding: 0 0 1.6rem 0;
-        border-bottom: #EBF2F6 1px dashed;
+        border-bottom: #F2F2F2 1px dashed;
     }
 
     .post-footer .share {

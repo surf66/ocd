@@ -20,6 +20,13 @@
             $("body").toggleClass("nav-opened nav-closed");
         });
 
+        $(".js-arrow-down").on("click", function(){
+            var posts = $(".js-posts"),
+                html = $("html, body");
+
+            html.animate({scrollTop: posts.offset().top - 40}, "fast");
+        });
+
     });
 
     // Arctic Scroll by Paul Adam Davis
@@ -53,4 +60,5 @@
         });
 
     };
+
 })(jQuery);
