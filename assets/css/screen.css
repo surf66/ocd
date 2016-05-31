@@ -705,7 +705,8 @@ body.nav-opened .nav {
     width: auto;
 }
 
-.home-template .menu-button {
+.home-template .menu-button,
+.home-template .menu-button:hover {
   color: #fff;
 }
 
