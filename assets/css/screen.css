@@ -705,6 +705,10 @@ body.nav-opened .nav {
     width: auto;
 }
 
+.home-template .menu-button {
+  color: #fff;
+}
+
 .menu-button {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
