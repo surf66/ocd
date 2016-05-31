@@ -608,11 +608,10 @@ body.nav-opened .nav {
 }
 
 .subscribe-button {
-    display: none;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    display: block;
+    display: none;
     position: absolute;
     bottom: 30px;
     left: 30px;
